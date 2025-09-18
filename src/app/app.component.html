@@ -1,0 +1,32 @@
+<header class="app-header">
+  <div class="container">
+    <div class="brand">
+      <span style="font-size:20px;">🐾 Pets</span>
+      <span class="badge">Angular SPA</span>
+    </div>
+
+    <nav>
+      <a routerLink="/">Home</a>
+
+      <ng-container *ngIf="auth.isLoggedIn(); else guest">
+        <a routerLink="/pets">Pets</a>
+        <a routerLink="/breeds">Breeds</a>
+        <a *ngIf="auth.user()?.role === 'admin'" routerLink="/users">Users</a>
+        <button class="link" (click)="toggleTheme()" title="Змінити тему">{{ themeIcon }}</button>
+        <button class="btn secondary" (click)="auth.logout()">Logout</button>
+      </ng-container>
+
+      <ng-template #guest>
+        <button class="link" (click)="toggleTheme()" title="Змінити тему">{{ themeIcon }}</button>
+        <a routerLink="/auth/login">Login</a>
+        <a routerLink="/auth/register">Register</a>
+      </ng-template>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <router-outlet></router-outlet>
+</main>
+
+<app-footer></app-footer>

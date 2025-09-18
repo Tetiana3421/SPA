@@ -1,0 +1,8 @@
+<img class="hero" [src]="imageUrl || breed?.imageUrl || 'https://picsum.photos/seed/breed/960/540'" [alt]="breed?.name">
+<h2>{{ breed?.name }}</h2>
+<p><b>Вид:</b> {{ breed?.species }}</p>
+<p><b>Походження:</b> {{ breed?.origin }}</p>
+<section class="mb">
+  <h3>Опис породи</h3>
+  <p>{{ breed?.descriptionLong || breed?.description }}</p>
+</section>
