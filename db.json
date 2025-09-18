@@ -1,0 +1,95 @@
+{
+  "pets": [
+    {
+      "id": "p1",
+      "name": "Бублик 2",
+      "type": "dog",
+      "breedId": "b1",
+      "age": 3,
+      "weightKg": 25,
+      "createdAt": 1726156800000,
+      "notes": "Любить м’яч",
+      "userId": 1
+    },
+    {
+      "id": "p2",
+      "name": "Мурка",
+      "type": "cat",
+      "breedId": "b2",
+      "age": 2,
+      "weightKg": 4,
+      "createdAt": 1726243200000,
+      "notes": "Спить на сонці",
+      "userId": 1
+    },
+    {
+      "name": "Буся",
+      "type": "dog",
+      "age": 3,
+      "weightKg": 7,
+      "notes": "веселий",
+      "userId": 1,
+      "id": "rwA3eZy"
+    },
+    {
+      "name": "кіт4",
+      "type": "cat",
+      "age": null,
+      "weightKg": null,
+      "notes": "",
+      "userId": 3,
+      "id": "X1wYqz0"
+    },
+    {
+      "name": "Бублик",
+      "type": "cat",
+      "age": null,
+      "weightKg": null,
+      "notes": "",
+      "userId": 4,
+      "id": "uniaWkl"
+    }
+  ],
+  "breeds": [
+    {
+      "id": "b1",
+      "name": "Лабрадор",
+      "species": "dog",
+      "origin": "Канада",
+      "description": "Дружелюбні, активні"
+    },
+    {
+      "id": "b2",
+      "name": "Британська короткошерста",
+      "species": "cat",
+      "origin": "Велика Британія",
+      "description": "Спокійні"
+    }
+  ],
+  "users": [
+    {
+      "email": "admin@test.com",
+      "password": "$2a$10$j.oNkqh6FwoNGjbFGVOGZunwx4E9eanQGoGLb24Qd39bXCHjuwPYK",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$IRUfh7KYvWZ3q3YsiImNAuKxAk7p0PFfPmkpU/7xZ01.HYuiQlPg2",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "email": "user1758209234887@test.com",
+      "password": "$2a$10$QGQlb6/m67jR33RymEV56Ow2zJJ8X2rbYBAkKYqHZ1u7IGZewRMhi",
+      "role": "user",
+      "id": 3
+    },
+    {
+      "email": "user1758209300389@test.com",
+      "password": "$2a$10$b5POvJ2vi3UexFvfHCF.H.KlV8bubDqE9en5888IccGw7ES4i630O",
+      "role": "user",
+      "id": 4
+    }
+  ]
+}
